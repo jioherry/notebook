@@ -1,0 +1,17 @@
+<h1><%= @topic.title %></h1>
+
+<%= @topic.created_at %>
+
+<%= simple_format(@topic.description) %>
+
+<h2>評論</h2>
+
+<% @comments.each do |comment| %>
+
+	<%= comment.content %>
+
+<% end %>
+
+<p><%= link_to '新的回覆', new_topic_comment_path(@topic) %></p>
+
+<p><%= link_to '回首頁', topics_path %></p>

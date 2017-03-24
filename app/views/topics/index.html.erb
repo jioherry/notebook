@@ -1,0 +1,16 @@
+<h1>Notebook Forum</h1>
+
+<ul>
+
+	<% @topics.each do |topic| %>	
+		<li>
+			<%= topic.title %>
+			<%= link_to 'Show', topic_path(topic) %>
+			<%= topic.comments.size %>
+		</li>
+	<% end %>
+
+</ul>
+
+<%= link_to 'New topic', new_topic_path %>
+
