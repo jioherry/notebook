@@ -1,10 +1,10 @@
 class TopicsController < ApplicationController
 
 	before_action :authenticate_user!, only:[ :new ]
-	before_action :set_topic, only:[ :edit, :update, :destroy]
+	before_action :set_topic, only:[ :show, :edit, :update, :destroy]
 
 	def index
-		@topics = Topic.all
+		@topics = Topic.all.order('comments_count desc')
 	end
 
 	def new
@@ -19,19 +19,22 @@ class TopicsController < ApplicationController
 	end
 
 	def show
-		@topic = Topic.find(params[:id])
-		@comments = @topic.comments
+		# @topic = Topic.find(params[:id])
+		@comments = @topic.comments.order('created_at desc')
 	end
 
 	def edit
+		# @topic = Topic.find(params[:id])
 	end
 
 	def update
+		# @topic = Topic.find(params[:id])
 		@topic.save
 		redirect_to topic_url(@topic)
 	end
 
 	def destroy
+		# @topic = Topic.find(params[:id])
 		@topic.destroy
 		redirect_to topics_url
 	end
