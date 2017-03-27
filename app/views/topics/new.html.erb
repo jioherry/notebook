@@ -1,12 +1,1 @@
-<%= form_for @topic, :url => topics_path do |f| %>
-
-	<%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) %>
-
-  <%= f.label :title, "Title" %>
-  <%= f.text_field :title %>
-
-  <%= f.submit "Create" %>
-
-<% end %>
-
-<%= link_to '回首頁', topics_path %>
+<%= render :partial => "form" %>

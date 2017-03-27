@@ -1,10 +1,15 @@
 class TopicsController < ApplicationController
 
-	before_action :authenticate_user!, only:[ :new ]
+	before_action :authenticate_user!, only:[ :new, :edit, :update, :destroy]
 	before_action :set_topic, only:[ :show, :edit, :update, :destroy]
 
 	def index
-		@topics = Topic.all.order('comments_count desc')
+		if params[:categories].present? # 如果有 category 傳入
+			@category = Category.find(params[:categories])
+			@topics = @category.topics.order('comments_count desc',).page(params[:page]).per(5)
+		else
+			@topics = Topic.all.order('comments_count desc').page(params[:page]).per(5)
+		end
 	end
 
 	def new
@@ -14,8 +19,11 @@ class TopicsController < ApplicationController
 
 	def create
 		@topic = Topic.new(topic_params)
-		@topic.save
-		redirect_to topics_url
+		if @topic.save
+			redirect_to topics_url
+		else
+			render :new
+		end
 	end
 
 	def show
@@ -29,8 +37,11 @@ class TopicsController < ApplicationController
 
 	def update
 		# @topic = Topic.find(params[:id])
-		@topic.save(topic_params)
-		redirect_to topic_url(@topic)
+		if @topic.update(topic_params)
+			redirect_to topic_url(@topic)
+		else
+			render :edit
+		end
 	end
 
 	def destroy
@@ -52,7 +63,8 @@ class TopicsController < ApplicationController
 			:date, 
 			:description, 
 			:file_location,
-			:category_ids
+			:category_id,
+			:category_ids => []
 			)
 	end
 

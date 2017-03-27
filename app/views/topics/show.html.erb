@@ -1,5 +1,15 @@
 <h1><%= @topic.title %></h1>
 
+<ul>
+
+<% @topic.categorys.each do |category| %>
+
+	<li><%= category.name %></li>
+
+<% end %>
+
+</ul>
+
 <%= @topic.created_at %>
 
 <%= simple_format(@topic.description) %>
