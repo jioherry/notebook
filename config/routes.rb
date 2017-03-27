@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   	resources	:comments
   end
 
+  resources :topics do
+  	resources :categories	
+  end
+
   root "topics#index"
 
 end

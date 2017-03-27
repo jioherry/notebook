@@ -6,6 +6,8 @@
 		<li>
 			<%= topic.title %>
 			<%= link_to 'Show', topic_path(topic) %>
+			<%= link_to 'edit', edit_topic_path(topic) %>
+			<%= link_to 'Destroy', topics_path(topic), method: :delete, data:{ confirm: "Are you sure?" } %>
 			<%= topic.comments.size %>
 		</li>
 	<% end %>

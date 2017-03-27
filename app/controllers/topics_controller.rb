@@ -29,13 +29,14 @@ class TopicsController < ApplicationController
 
 	def update
 		# @topic = Topic.find(params[:id])
-		@topic.save
+		@topic.save(topic_params)
 		redirect_to topic_url(@topic)
 	end
 
 	def destroy
 		# @topic = Topic.find(params[:id])
 		@topic.destroy
+
 		redirect_to topics_url
 	end
 
@@ -50,7 +51,9 @@ class TopicsController < ApplicationController
 			:title, 
 			:date, 
 			:description, 
-			:file_location)
+			:file_location,
+			:category_ids
+			)
 	end
 
 
