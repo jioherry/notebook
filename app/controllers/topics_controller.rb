@@ -12,6 +12,14 @@ class TopicsController < ApplicationController
 		end
 	end
 
+	# GET /topics /latest
+	def latest
+		# 計算所有 email 數量
+  	@users = User.count(params[:id])
+  	@topics = Topic.count(params[:id])
+  	@comments = Comment.count(params[:id])
+	end
+
 	def new
 		# authenticate_user!
 		@topic = Topic.new

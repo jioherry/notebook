@@ -1,7 +1,7 @@
 <h1>Notebook Forum</h1>
 
 <%= form_tag topics_path, method: :get do %>
-	<%= select_tag "categories", options_from_collection_for_select(Category.all, :id, :name),:onchange => 'this.form.submit()', prompt: "ALL" %>
+	<%= select_tag "categories", options_from_collection_for_select( Category.all, :id, :name),:onchange => 'this.form.submit()', prompt: "ALL" %>
 <% end %>
 
 <ul>
@@ -19,5 +19,7 @@
 </ul>
 
 <%= paginate @topics %>
+
+<%= link_to "About", latest_topics_path %></br>
 
 <%= link_to 'New topic', new_topic_path %>
