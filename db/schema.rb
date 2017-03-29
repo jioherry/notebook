@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170327060421) do
+ActiveRecord::Schema.define(version: 20170328130219) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20170327060421) do
     t.integer  "topic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "porfiles", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "email"
+    t.integer  "user_id"
+    t.string   "nickname"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "content"
   end
 
   create_table "topic_category_ships", force: :cascade do |t|

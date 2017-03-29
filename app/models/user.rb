@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
   has_many :comments
 
+  has_one :porfile
+
+
 end

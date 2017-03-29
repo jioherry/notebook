@@ -1,0 +1,15 @@
+<h1><%= current_user.porfile %></h1>
+
+<%= current_user.nickname %>
+
+<%= form_for current_user do |f| %>
+
+ 	<%= f.label :email %>
+  <%= f.email_field :email %>
+
+
+<% end %>
+
+<p><%= link_to '編輯個人資料', porfile_users_path %></p>
+
+<p><%= link_to '回首頁', topics_path %></p>

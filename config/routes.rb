@@ -9,6 +9,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :users do
+    collection do
+      get :porfile
+    end
+  end
+
   resources :topics do
   	resources :categories	
   end
