@@ -7,6 +7,21 @@
  	<%= f.label :email %>
   <%= f.email_field :email %>
 
+<% end %>
+
+<p>文章</p>
+
+<% current_user.topics.each do |topic| %>
+
+	<%= topic.title %>
+
+<% end %>
+
+<p>回覆</p>
+
+<% current_user.comments.each do |comment| %>
+
+	<%= comment.content %>
 
 <% end %>
 
