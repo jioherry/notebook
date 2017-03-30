@@ -43,6 +43,7 @@ class TopicsController < ApplicationController
 
 	def edit
 		# @topic = Topic.find(params[:id])
+		# @comments = @topic.comments
 	end
 
 	def update
@@ -70,6 +71,7 @@ class TopicsController < ApplicationController
 	end
 
 	def topic_params
+		# byebug
 		params.require(:topic).permit(
 			:title, 
 			:date, 

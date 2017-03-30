@@ -16,11 +16,26 @@
 
 <h2>評論</h2>
 
+<ul>
+
 <% @comments.each do |comment| %>
 
+	<li>
 	<%= comment.content %>
 
+	<%= form_for comment, :url => topic_comment_path(:topic_id => @topic.id, :id => comment.id), :method => :patch do |f| %>
+
+		<%= f.label :content %>
+  	<%= f.text_field :content %>
+
+  	<%= f.submit "更改回覆" %>
+
+	<% end %>
+	</li>
+	
 <% end %>
+
+</ul>
 
 <p><%= link_to '新的回覆', new_topic_comment_path(@topic) %></p>
 

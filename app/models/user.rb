@@ -8,6 +8,6 @@ class User < ApplicationRecord
   has_many :topics
   has_many :comments
 
-  has_one :porfile
+  
 
 end

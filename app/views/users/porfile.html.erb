@@ -1,11 +1,14 @@
-<h1><%= current_user.porfile %></h1>
-
 <%= current_user.nickname %>
 
-<%= form_for current_user do |f| %>
+<%= form_for current_user, :url => porfile_users_path do |f| %>
 
- 	<%= f.label :email %>
-  <%= f.email_field :email %>
+ 	<%= f.label :email, "email" %>
+  <%= f.text_field :email %>
+
+  <%= f.label :nickname, "暱稱" %>
+  <%= f.text_field :nickname %>
+
+  <%= f.submit "修改" %>
 
 <% end %>
 
@@ -28,3 +31,4 @@
 <% end %>
 
 <p><%= link_to '回首頁', topics_path %></p>
+
