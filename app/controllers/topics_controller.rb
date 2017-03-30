@@ -21,11 +21,14 @@ class TopicsController < ApplicationController
 
 	def new
 		# authenticate_user!
-		@topic = Topic.new
+		# 使用者要 new 一篇文
+		@topic = current_user.topics.new
 	end
 
 	def create
-		@topic = Topic.new(topic_params)
+		# 使用者可以 create 一篇文章
+		# byebug
+		@topic = current_user.topics.new(topic_params)
 		if @topic.save
 			redirect_to topics_url
 		else
@@ -43,6 +46,7 @@ class TopicsController < ApplicationController
 	end
 
 	def update
+		# 使用者可以 update 一篇文章
 		# @topic = Topic.find(params[:id])
 		if @topic.update(topic_params)
 			redirect_to topic_url(@topic)
@@ -52,6 +56,7 @@ class TopicsController < ApplicationController
 	end
 
 	def destroy
+		# 使用者可以 destroy 一篇文章
 		# @topic = Topic.find(params[:id])
 		@topic.destroy
 
@@ -70,11 +75,8 @@ class TopicsController < ApplicationController
 			:date, 
 			:description, 
 			:file_location,
-			:category_id,
 			:category_ids => []
 			)
 	end
-
-
 
 end

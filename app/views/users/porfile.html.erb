@@ -15,6 +15,8 @@
 
 	<%= topic.title %>
 
+	<%= link_to 'edit', edit_topic_path(topic) %>
+
 <% end %>
 
 <p>回覆</p>
@@ -24,7 +26,5 @@
 	<%= comment.content %>
 
 <% end %>
-
-<p><%= link_to '編輯個人資料', porfile_users_path %></p>
 
 <p><%= link_to '回首頁', topics_path %></p>

@@ -7,5 +7,9 @@ class UsersController < ApplicationController
 		@comments = current_user.comments
 	end
 
+	def edit
+		@topics = current_user.topics
+	end
+
 end
 
