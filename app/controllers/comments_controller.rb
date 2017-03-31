@@ -14,10 +14,10 @@ class CommentsController < ApplicationController
 
 	def update
 		@comment = current_user.comments.find(params[:id])
-		# @comment.topic_id = params[:topic_id]
 		@comment.update(comment_params)
 		topic = Topic.find(params[:topic_id])
 		redirect_to topic_url(topic)
+
 	end
 
 	private
