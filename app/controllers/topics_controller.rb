@@ -4,7 +4,7 @@ class TopicsController < ApplicationController
 	before_action :set_topic, only:[ :show, :edit, :update, :destroy]
 
 	def index
-		if params[:categories].present? # 如果有 category 傳入
+		if params[:categories].present? # params[:categories] != '' present == not_blank 
 			@category = Category.find(params[:categories])
 			@topics = @category.topics.order('comments_count desc',).page(params[:page]).per(5)
 		else
@@ -39,6 +39,10 @@ class TopicsController < ApplicationController
 	def show
 		# @topic = Topic.find(params[:id])
 		@comments = @topic.comments.order('created_at desc')
+
+    @impression = @topic.impression
+    @impression = @impression +1
+    @topic.update(:impression => @impression)
 	end
 
 	def edit
