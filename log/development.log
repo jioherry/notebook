@@ -30236,3 +30236,13 @@ Processing by Admin::CategoriesController#index as HTML
 Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:22:17 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (28.6ms)
+Completed 200 OK in 102ms (Views: 87.8ms | ActiveRecord: 8.8ms)
+
+
