@@ -28600,3 +28600,1639 @@ Processing by Admin::CategoriesController#index as HTML
 Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:19:30 +0800
+Processing by Admin::CategoriesController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:19:36 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (28.5ms)
+Completed 200 OK in 52ms (Views: 43.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:19:45 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 57ms (Views: 39.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:19:45 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 30ms (Views: 25.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:19:47 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:19:47 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:19:48 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 26.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:19:48 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-01 16:19:50 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6yUly3PAQL9NJFXIdLUmhsvJEA2PIH5pY7ESsxF+ELI+B06sVfaA8jycxeJE6KhBFquWzRAgrQAkjq9OAczbuQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:19:50 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-01 16:19:51 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-01 16:20:00 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7nql8rhGBKMf+Bj+CmCcugc7K8NJ9HimgEdhsGRZUMusHeraJhAwdUQSt8qKMchdRVOj/HXkx57KGqDUichhdA==", "user"=>{"email"=>"55555@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "55555@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2017-04-01 08:20:00 UTC], ["last_sign_in_at", 2017-03-31 13:18:01 UTC], ["sign_in_count", 9], ["updated_at", 2017-04-01 08:20:00 UTC], ["id", 5]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 162ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:20:00 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:02 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:03 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.9ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:03 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:06 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:06 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-01 16:20:08 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SA3Hxfe662HYpahP/O3CGNqjagdadH8y70MaFnnn8gvMYIrBhtqos0/cK7GpJJqtUzmbrFEzBBNVF5md0CZoKg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:20:08 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-01 16:20:09 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-01 16:20:29 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Mx7IUwnBWKXcbeyp4pBCEdYkDv2N4CAK6MsUNWhFJbz50gM+wkP7qf+PlXkXI0SAzZsLozGEZG/n5uoq0diLw==", "user"=>{"email"=>"jioherry@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jioherry@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2017-04-01 08:20:29 UTC], ["last_sign_in_at", 2017-03-31 13:00:37 UTC], ["sign_in_count", 7], ["updated_at", 2017-04-01 08:20:29 UTC], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 155ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:20:29 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:31 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:32 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (8.7ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:32 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories/1/edit" for ::1 at 2017-04-01 16:20:34 +0800
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 152ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (Admin::CategoriesController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:38 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:38 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/topics" for ::1 at 2017-04-01 16:20:40 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:47 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:48 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:20:48 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (4.9ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:50 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:20:50 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/porfile.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-04-01 16:20:53 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jXpfEmFzOuB1oF6f5BLJMN7e0ZglQYb8CKsFcCbpu912CYnUwl7iXwP7AVzF+2R6jdhzTbiRkvhVxL4PYXTO6g=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:20:53 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-04-01 16:20:56 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-04-01 16:21:12 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2A552WQpzRUpiO56o8fQMpuM2qvFYbhjTB9GnepQUCazOf4SyjezIisAOFTygym20LTJTwF+/X4c6QcAcAHOXg==", "user"=>{"email"=>"55555@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "55555@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2017-04-01 08:21:12 UTC], ["last_sign_in_at", 2017-04-01 08:20:00 UTC], ["sign_in_count", 10], ["updated_at", 2017-04-01 08:21:12 UTC], ["id", 5]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 162ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 16:21:12 +0800
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY comments_count desc LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:21:14 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:21:15 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:21:15 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:21:19 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:24:15 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:24:15 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:24:16 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (4.1ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:24:16 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:24:17 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 16:24:17 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:24:20 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:24:20 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:40:30 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (289.1ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fb67a1dcd00>:0x007fb67a49d1c0>
+Did you mean?  @categories):
+    14: 	<% end %>
+    15: 
+    16: 	<li>
+    17: 	<%= form_for category, :url => admin_categories_path(:category_id => @category), :method => :post do |f| %>
+    18: 
+    19: 	  	<%= f.text_field :name %>
+    20: 
+  
+app/views/admin/categories/index.html.erb:17:in `_app_views_admin_categories_index_html_erb__2495029236540420644_70210856231900'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.9ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:41:12 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (341.8ms)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `categories' for #<#<Class:0x007fb67a1dcd00>:0x007fb67b3a35c0>
+Did you mean?  @categories):
+    14: 	<% end %>
+    15: 
+    16: 	<li>
+    17: 	<%= form_for categories, :url => admin_categories_path(:category_id => @category), :method => :post do |f| %>
+    18: 
+    19: 	  	<%= f.text_field :name %>
+    20: 
+  
+app/views/admin/categories/index.html.erb:17:in `_app_views_admin_categories_index_html_erb__2495029236540420644_70210864290980'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:42:23 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (8.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Category::ActiveRecord_Relation:0x007fb67bb9c880>
+Did you mean?  to_set
+               to_ary):
+    15: 
+    16: 	<li>
+    17: 	
+    18: 	<%= form_for @categories, :url => admin_categories_path(:category_id => @category), :method => :post do |f| %>
+    19: 
+    20: 	  	<%= f.text_field :name %>
+    21: 
+  
+app/views/admin/categories/index.html.erb:18:in `_app_views_admin_categories_index_html_erb__2495029236540420644_70210914898920'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.1ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:42:50 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (8.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Category::ActiveRecord_Relation:0x007fb67b9e28a0>
+Did you mean?  to_set
+               to_ary):
+    15: 
+    16: 	<li>
+    17: 
+    18: 	<%= form_for @categories, :url => admin_categories_path(params[:id]), :method => :post do |f| %>
+    19: 
+    20: 	  	<%= f.text_field :name %>
+    21: 
+  
+app/views/admin/categories/index.html.erb:18:in `_app_views_admin_categories_index_html_erb__2495029236540420644_70210897835040'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.9ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:44:14 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (8.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Category::ActiveRecord_Relation:0x007fb67a66d388>
+Did you mean?  to_set
+               to_ary):
+    15: 
+    16: 	<li>
+    17: 
+    18: 	<%= form_for @categories, :url => admin_categories_path, :method => :post do |f| %>
+    19: 
+    20: 	  	<%= f.text_field :name %>
+    21: 
+  
+app/views/admin/categories/index.html.erb:18:in `_app_views_admin_categories_index_html_erb__2495029236540420644_70210857150180'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.6ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 16:49:47 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (0.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+> admin_categories_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.3ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:22:36 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (0.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+> admin_categories_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.3ms)
+Started PUT "/__web_console/repl_sessions/8fadd34bec575eab7484095465385413" for ::1 at 2017-04-01 17:23:02 +0800
+Started PUT "/__web_console/repl_sessions/8fadd34bec575eab7484095465385413" for ::1 at 2017-04-01 17:23:09 +0800
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:24:03 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+> admin_categories_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.3ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:24:30 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+new_topic_category_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.4ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:25:05 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+new_topic_category_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:18: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.6ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:44:34 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:21: syntax error, unexpected =>
+> admin_categories_path(id: => category_id), :method => :pos
+                              ^
+/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/admin/categories/index.html.erb:21: syntax error, unexpected =>
+app/views/admin/categories/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.7ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:45:55 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+egory_id), methodd => post doo f );@output_buffer.safe_appen
+                              ^):
+  
+app/views/admin/categories/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.2ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:46:29 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  Rendered admin/categories/index.html.erb within layouts/admin (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ray/Desktop/program/notbook/app/views/admin/categories/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+egory_id), methodd => post doo f );@output_buffer.safe_appen
+                              ^):
+  
+app/views/admin/categories/index.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.1ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:50:01 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (16.9ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:50:03 +0800
+Processing by Admin::CategoriesController#new as HTML
+Completed 406 Not Acceptable in 154ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admin::CategoriesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.0ms)
+Started GET "/users/porfile" for ::1 at 2017-04-01 17:50:09 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 56ms (Views: 37.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 17:50:09 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 17:50:10 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/porfile" for ::1 at 2017-04-01 17:50:12 +0800
+Processing by UsersController#porfile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/porfile.html.erb within layouts/application
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered users/porfile.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:50:14 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.9ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:50:14 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 17:52:06 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:52:07 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (135.5ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<#<Class:0x007fb681b03968>:0x007fb67b965f58>):
+    1: <%= form_for @category do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210895956640'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.4ms)
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:52:36 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @categories do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210918633420'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.3ms)
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:53:20 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (1.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @categories do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210913274500'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+Started PUT "/__web_console/repl_sessions/16b6a95ad8a8f05ef54de4eb17d5e52e" for ::1 at 2017-04-01 17:53:25 +0800
+Started PUT "/__web_console/repl_sessions/16b6a95ad8a8f05ef54de4eb17d5e52e" for ::1 at 2017-04-01 17:53:26 +0800
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:53:58 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (122.1ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<#<Class:0x007fb681170900>:0x007fb67f523ec8>):
+    1: <%= form_for @category do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210898445580'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.6ms)
+Started PUT "/__web_console/repl_sessions/77eecf14d041284a2a212c18cb580559" for ::1 at 2017-04-01 17:54:50 +0800
+Started PUT "/__web_console/repl_sessions/77eecf14d041284a2a212c18cb580559" for ::1 at 2017-04-01 17:54:51 +0800
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:55:52 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (140.7ms)
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<#<Class:0x007fb681979ca0>:0x007fb681971438>):
+    1: <%= form_for @category do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210917488980'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 17:56:47 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @categories, :url => admin_categories_path do |f| %>
+    2: 
+    3: 	<%= f.label :name, "類別" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/admin/categories/new.html.erb:1:in `_app_views_admin_categories_new_html_erb__2158658946361015898_70210899618000'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+Started PUT "/__web_console/repl_sessions/636983311d5ee7fba7144033cbf9eee4" for ::1 at 2017-04-01 17:56:51 +0800
+Started PUT "/__web_console/repl_sessions/636983311d5ee7fba7144033cbf9eee4" for ::1 at 2017-04-01 17:56:54 +0800
+Started GET "/notbooks" for ::1 at 2017-04-01 17:58:17 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/notbooks"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [84 times] (18.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.4ms)
+Started GET "/notbooks" for ::1 at 2017-04-01 17:58:17 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/notbooks"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [84 times] (19.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.4ms)
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 18:00:38 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (1.9ms)
+Completed 200 OK in 29ms (Views: 19.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:00:39 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (27.4ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 18:00:40 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (1.3ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:00:42 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (2.5ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 18:00:43 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (1.3ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/categories" for ::1 at 2017-04-01 18:00:45 +0800
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for Admin::CategoriesController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started POST "/admin/categories" for ::1 at 2017-04-01 18:01:41 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"adW6HD7qRdHh5VFOEgiYUE0upo5ROk0H8kSnvHgjIvW9AhwevbMRM5BOPRY2Cj4Qq9NKsFk6C+X9dHSfKKwx8A==", "category"=>{"name"=>"dwed"}, "commit"=>"Create Category"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "dwed"], ["created_at", 2017-04-01 10:01:41 UTC], ["updated_at", 2017-04-01 10:01:41 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories
+Completed 302 Found in 21ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:01:41 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (27.9ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/categories/5/edit" for ::1 at 2017-04-01 18:01:43 +0800
+Processing by Admin::CategoriesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 143ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::UnknownFormat (Admin::CategoriesController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:01:48 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:01:50 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/categories/new" for ::1 at 2017-04-01 18:06:04 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering admin/categories/new.html.erb within layouts/admin
+  Rendered admin/categories/new.html.erb within layouts/admin (1.7ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:06:06 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (7.4ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/admin/categories/1" for ::1 at 2017-04-01 18:06:11 +0800
+Processing by Admin::CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0fC7DwwcWXdyaJ+FCEpjNkH7Iy6yzrMnF0WGqolLcaHQ0sBTPClupbOsBh8fNAe5Qc5Kb8Cpzorx3Udrh1PimA==", "category"=>{"name"=>"13"}, "commit"=>"更改回覆", "id"=>"1"}
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "categories" SET "name" = ?, "updated_at" = ? WHERE "categories"."id" = ?[0m  [["name", "13"], ["updated_at", 2017-04-01 10:06:11 UTC], ["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:06:11 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (5.5ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:09:53 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (6.2ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:10:17 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (7.2ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:10:54 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (6.1ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/categories" for ::1 at 2017-04-01 18:11:19 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering admin/categories/index.html.erb within layouts/admin
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered admin/categories/index.html.erb within layouts/admin (12.6ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+

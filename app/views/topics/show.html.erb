@@ -23,7 +23,7 @@
 	<li>
 	<%= comment.content %>
 
-	<%= form_for comment, :url => topic_comment_path(:topic_id => @topic.id, :id => comment.id), :method => :patch do |f| %>
+	<%= form_for comment, :url => new_topic_category_path(:topic_id => @topic.id, :id => comment.id), :method => :patch do |f| %>
 
 		<%= f.label :content %>
   	<%= f.text_field :content %>

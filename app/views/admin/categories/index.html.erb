@@ -1,15 +1,27 @@
 <h1><%= current_user.nickname %></h1>
 
+<p>類別</p>
 <ul>
 
 	<% @categories.each do |category| %>	
 		<li>
 
 			<%= category.name %>
-			<%= link_to 'edit', edit_admin_category_path(category) %>
-			<%= link_to 'destory', admin_category_path(category), method: :delete %>
+
+			<%= link_to '消滅', admin_category_path(category), method: :delete %>
+
+			<%= form_for category, :url => admin_category_path( :id => category.id), :method => :patch do |f| %>
+
+			<%= f.label :name %>
+	  	<%= f.text_field :name %>
+
+	  	<%= f.submit "更改回覆" %>
+
+			<% end %>
 
 		</li>
 	<% end %>
 
 </ul>
+
+<%= link_to "New category", new_admin_category_path %>

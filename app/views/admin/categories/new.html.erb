@@ -1,0 +1,10 @@
+<%= form_for @category, :url => admin_categories_path do |f| %>
+
+	<%= f.label :name, "類別" %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+
+<% end %>
+
+<%= link_to '回首頁', admin_categories_path %>
