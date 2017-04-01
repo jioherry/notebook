@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
 		@comment = current_user.comments.find(params[:id])
 		@comment.update(comment_params)
 		topic = Topic.find(params[:topic_id])
+
 		redirect_to topic_url(topic)
 
 	end

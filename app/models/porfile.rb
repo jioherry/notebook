@@ -1,5 +1,3 @@
 class Porfile < ApplicationRecord
-
-	
 end
 

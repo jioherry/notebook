@@ -22,6 +22,16 @@ Rails.application.routes.draw do
   	resources :categories	
   end
 
+  namespace :admin do
+    resources :topics do
+      resources :comments
+    end
+  end
+
+  namespace :admin do
+    resources :categories
+  end
+
   root "topics#index"
 
 end
