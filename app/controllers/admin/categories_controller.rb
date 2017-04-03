@@ -1,7 +1,6 @@
 class Admin::CategoriesController < ApplicationController
 
 	before_action :authenticate
-    layout "admin"
 
 	def index
 		@categories = Category.all
@@ -34,13 +33,15 @@ class Admin::CategoriesController < ApplicationController
 		# 如何找到未使用過的 category
 	end
 
-	private
+	protected
 
 		def authenticate
 	    authenticate_or_request_with_http_basic do |user_name, password|
-	      user_name == "12345" && password == "12345"
+	      user_name == "admin" && password == "12345"
 	    end
 	  end
+
+	private
 
 		def category_params
 			params.require(:category).permit(:name, :topic_id)

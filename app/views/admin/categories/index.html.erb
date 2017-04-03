@@ -29,11 +29,13 @@
 
 <ul>
 
-	<% @users.each do |category| %>
+	<% @users.each do |user| %>
 
 	<li>
-		<%= category.email %>
+		<%= link_to user.email, edit_admin_user_path(:id => user.id) %>
 	</li>
 
 	<% end %>
 </ul>
+
+<%= link_to "回", porfile_users_path %>

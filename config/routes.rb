@@ -32,6 +32,10 @@ Rails.application.routes.draw do
     resources :categories
   end
 
+  namespace :admin do
+    resources :users
+  end
+
   root "topics#index"
 
 end

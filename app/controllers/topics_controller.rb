@@ -1,6 +1,9 @@
 class TopicsController < ApplicationController
 
-	before_action :authenticate_user!, only:[ :new, :edit, :update, :destroy]
+	before_action :authenticate_user!, only:[ :new, :edit, :update]
+
+	before_action :authenticate_admin, only:[ :destroy]
+
 	before_action :set_topic, only:[ :show, :edit, :update, :destroy]
 
 	def index
@@ -70,19 +73,19 @@ class TopicsController < ApplicationController
 
 	private
 
-	def set_topic
-		@topic = Topic.find(params[:id])
-	end
+		def set_topic
+			@topic = Topic.find(params[:id])
+		end
 
-	def topic_params
-		# byebug
-		params.require(:topic).permit(
-			:title, 
-			:date, 
-			:description, 
-			:file_location,
-			:category_ids => []
-			)
-	end
+		def topic_params
+			# byebug
+			params.require(:topic).permit(
+				:title, 
+				:date, 
+				:description, 
+				:file_location,
+				:category_ids => []
+				)
+		end
 
 end

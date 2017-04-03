@@ -1,0 +1,13 @@
+<%= form_for @user, :url => admin_user_path do |f| %>
+
+	<%= f.label :email, "email" %>
+  <%= f.text_field :email%>
+
+  <%= f.label :nickname, "暱稱" %>
+  <%= f.text_field :nickname %>
+
+  <%= f.submit %>
+
+<% end %>
+
+<%= link_to '回首頁', admin_categories_path %>
