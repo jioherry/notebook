@@ -1,0 +1,4 @@
+ // 與 Tab 相等的空格數量。當 `editor.detectIndentation` 已開啟時，會根據檔案內容覆寫此設定。
+{
+  "editor.tabSize": 2,
+}
