@@ -18,7 +18,6 @@ class CommentsController < ApplicationController
 		topic = Topic.find(params[:topic_id])
 
 		redirect_to topic_url(topic)
-
 	end
 
 	private
